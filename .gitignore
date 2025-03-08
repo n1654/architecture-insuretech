@@ -1,2 +1,4 @@
 .DS_Store
 *.drawio.bkp
+__pycache__
+loadgen-venv
