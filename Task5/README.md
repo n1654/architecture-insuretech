@@ -1,0 +1,38 @@
+# Задание 5. Проектирование GraphQL API
+
+Файл схемы
+
+[schema.graphql](./schema.graphql)
+
+____
+
+Схема graphql
+
+```graphql
+type Client {
+  id: ID!
+  name: String!
+  age: Int!
+  documents: [Document!]!
+  relatives: [Relative!]!
+}
+
+type Document {
+  id: ID!
+  type: String!
+  number: String!
+  issueDate: String!
+  expiryDate: String!
+}
+
+type Relative {
+  id: ID!
+  relationType: String!
+  name: String!
+  age: Int!
+}
+
+type Query {
+  client(id: ID!): Client
+}
+```
